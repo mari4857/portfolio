@@ -113,6 +113,12 @@ p {
 p:last-child {
   margin-bottom: 0px;
 }
+
+hr {
+  width: 80px;
+  margin: 0 auto;
+  border-style: solid;
+}
 /* end: typography */
 
 /* colors */
