@@ -71,7 +71,7 @@ a:focus i,
 }
 
 .btn {
-  border: 2px solid #fff;
+  border: 2px solid #0db4b9;
   border-radius: 23px;
   transition: all 200ms linear;
   cursor: pointer;
@@ -82,8 +82,17 @@ a:focus i,
 
 .btn:hover {
   color: #0db4b9;
-  background-color: #fff;
+  background-color: transparent;
   transition: all 200ms linear;
+}
+
+.btn--wire {
+  border-color: #fff;
+  background-color: transparent;
+}
+
+.btn--wire:hover {
+  background-color: #fff;
 }
 /* end: links and buttons */
 
@@ -274,6 +283,22 @@ hr {
 .portfolio-item img {
   width: 100%;
 }
+
+.portfolio-item-link-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.portfolio-item-link {
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.portfolio-item-link:last-child {
+  margin-bottom: 0px;
+}
 /* end: portfolio */
 
 /* media queries */
@@ -343,6 +368,21 @@ hr {
 
   .text-band-image-avatar {
     max-width: 200px;
+  }
+}
+
+@media (min-width: 500px) {
+  .portfolio-item-link-row {
+    flex-direction: row;
+  }
+
+  .portfolio-item-link {
+    margin-right: 10px;
+    margin-bottom: 0px;
+  }
+
+  .portfolio-item-link:last-child {
+    margin-right: 0px;
   }
 }
 
