@@ -121,6 +121,12 @@ h3,
   margin: 0 0 24px 0;
 }
 
+h4,
+.title-4 {
+  font-size: 22px;
+  margin: 20px 0;
+}
+
 p {
   line-height: 1.6em;
   margin: 0 0 18px 0;
@@ -144,6 +150,14 @@ hr {
 
 .bg-teal {
   background-color: #0db4b9;
+}
+
+.bg-teal-light {
+  background-color: rgba(13, 180, 185, 0.1);
+}
+
+.brdr-gray {
+  border-bottom: 1px solid #d6d6d6;
 }
 /* end: colors */
 
@@ -246,8 +260,37 @@ hr {
 }
 /* end: contact form */
 
+/* portfolio */
+.portfolio-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-item {
+  flex: 1;
+  margin-bottom: 40px;
+}
+
+.portfolio-item img {
+  width: 100%;
+}
+/* end: portfolio */
+
 /* media queries */
 @media (min-width: 768px) {
+  .portfolio-group {
+    flex-direction: row;
+    margin-bottom: 30px;
+  }
+  
+  .portfolio-group:last-child {
+    margin-bottom: 0px;
+  }
+
+  .portfolio-item {
+    margin: 0 10px;
+  }
+
   .contact-form-row {
     width: 48%;
   }
@@ -271,8 +314,15 @@ hr {
   }
 
   h3,
-  .title-3 {
+  h4,
+  .title-3,
+  .title-4 {
     font-size: 20px;
+  }
+
+  h4,
+  .title-4 {
+    margin: 10px 0px;
   }
 
   p {
