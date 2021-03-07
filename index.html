@@ -64,7 +64,7 @@
 			<div class="container">
 				<div class="text-band-main">
 					<header class="text-band-header">
-						<h3 class="title-2">Contact Mariana</h3>
+						<h3 class="title-2">Contact</h3>
 					</header>
 					<p class="text-center">I would love to hear from you! Please feel free to contact or follow me:</p>
 					<ol class="text-band-icon-list">
@@ -84,6 +84,21 @@
 							</a>
 						</li>
 					</ol>
+					<form action="https://formspree.io/f/mleoqrwy" method="POST" class="contact-form">
+						<div class="contact-form-row">
+							<label for="name" class="contact-form-label">Name</label>
+							<input id="name" type="text" name="name" class="contact-form-input" required>
+						</div>
+						<div class="contact-form-row">
+							<label for="email" class="contact-form-label">Email</label>
+							<input id="email" type="email" name="email" class="contact-form-input" required>
+						</div>
+						<div class="contact-form-row contact-form-row--textarea">
+							<label for="message" class="contact-form-label">Message</label>
+							<textarea id="message" name="message" class="contact-form-input contact-form-input--textarea" required></textarea>
+						</div>
+						<button type="submit" class="btn">Submit</button>
+					</form>
 				</div>
 			</div>
 		</section>
